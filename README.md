@@ -4,6 +4,9 @@
 
 ## Template Tags
 
+![](template-demo.gif)
+
+- [x] **variable** - `{{ }}`
 - [x] **autoescape** - `{% autoescape %} {% autoescape %}`
 - [x] **block** - `{% block %} {% endblock %}`
 - [x] **comment** - `{% comment %} {% endcomment %}`

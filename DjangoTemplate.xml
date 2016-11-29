@@ -228,4 +228,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="var" value="{{ $variable$ }}" description="Prints the value of the variable." toReformat="false" toShortenFQNames="true">
+    <variable name="variable" expression="&quot;variable&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
