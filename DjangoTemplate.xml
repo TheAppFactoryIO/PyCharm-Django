@@ -1,0 +1,231 @@
+<templateSet group="Django Template">
+  <template name="autoescape" value="{% autoescape $var$ %}&#10;&#9;&#10;{% endautoescape %}" description="Controls the current auto-escaping behavior." toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="&quot;off&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="block" value="{% block $block_title$ %}&#10;    $block_content$&#10;{% endblock $block_title$ %}" description="Defines a block that can be overridden by child templates." toReformat="false" toShortenFQNames="true">
+    <variable name="block_title" expression="&quot;title&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="block_content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="comment" value="{% comment &quot;$note$&quot; %}&#10;    $content$&#10;{% endcomment %}" description="Ignores everything between {% comment %} and {% endcomment %}." toReformat="false" toShortenFQNames="true">
+    <variable name="note" expression="&quot;Optional note&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="csrf" value="{% csrf_token %}" description="This tag is used for CSRF protection." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="cycle" value="{% cycle $value1$ $value2$ %}" description="Produces one of its arguments each time this tag is encountered." toReformat="false" toShortenFQNames="true">
+    <variable name="value1" expression="&quot;value1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="value2" expression="&quot;value2&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="{% debug %}" description="Produces one of its arguments each time this tag is encountered." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ext" value="{% extends &quot;$template$&quot; %}" description="Signals that this template extends a parent template." toReformat="false" toShortenFQNames="true">
+    <variable name="template" expression="&quot;base.html&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="extends" value="{% extends &quot;$template$&quot; %}" description="Signals that this template extends a parent template." toReformat="false" toShortenFQNames="true">
+    <variable name="template" expression="&quot;base.html&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="filter" value="{% filter $filter$ %}&#10;    $content$&#10;{% endfilter %}" description="Filters the contents of the block through one or more filters." toReformat="false" toShortenFQNames="true">
+    <variable name="filter" expression="&quot;force_escape&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="firstof" value="{% firstof $var1$ $var2$ $var3$ %}" description="Outputs the first argument variable that is not False." toReformat="false" toShortenFQNames="true">
+    <variable name="var1" expression="&quot;var1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="var2" expression=" &quot;var2&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="var3" expression=" &quot;var3&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="for" value="{% for $item$ in $list$ %}&#10;    $content$&#10;{% endfor %}" description="Loops over each item in an array, making the item available in a context variable." toReformat="false" toShortenFQNames="true">
+    <variable name="item" expression="&quot;item&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="list" expression=" &quot;list&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fore" value="{% for $item$ in $list$ %}&#10;    $content$&#10;{% empty %}&#10;    $empty_content$&#10;{% endfor %}" description="Loops over each item in an array, making the item available in a context variable." toReformat="false" toShortenFQNames="true">
+    <variable name="item" expression="&quot;item&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="list" expression=" &quot;list&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="empty_content" expression="&quot;empty content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="{% if $condition$ %}&#10;    $content$&#10;{% endif %}" description="The {% if %} tag evaluates a variable, and if that variable is “true”" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="&quot;condition&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="else" value="{% else %}" description="The {% else %} clause will be displayed if all previous conditions fail." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="elif" value="{% elif %}" description="The {% elseif %} clause is another if statement that allows you to check multiple expressions for TRUE" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="{% if $condition$ %}&#10;    $content$&#10;{% else %}&#10;    $else_content$&#10;{% endif %}" description="An if...else conditional statement" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="&quot;condition&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="else_content" expression="&quot;else content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ifelse" value="{% if $condition$ %}&#10;    $content$&#10;{% else %}&#10;    $else_content$&#10;{% endif %}" description="An if...else conditional statement" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="&quot;condition&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="else_content" expression="&quot;else content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ifchanged" value="{% ifchanged %}&#10;    $content$&#10;{% endifchanged %}" description="Check if a value has changed from the last iteration of a loop." toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="inc" value="{% include &quot;$template$&quot; %}" description="Loads a template and renders it with the current context." toReformat="false" toShortenFQNames="true">
+    <variable name="template" expression="&quot;base.html&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="include" value="{% include &quot;$template$&quot; %}" description="Loads a template and renders it with the current context." toReformat="false" toShortenFQNames="true">
+    <variable name="template" expression="&quot;base.html&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="load" value="{% load $library$ %}" description="Loads a custom template tag set." toReformat="false" toShortenFQNames="true">
+    <variable name="library" expression="&quot;library_name&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="lorem" value="{% lorem $count$ $method$ $random$ %}" description="Displays random “lorem ipsum” Latin text. This is useful for providing sample data in templates." toReformat="false" toShortenFQNames="true">
+    <variable name="count" expression="&quot;1&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="&quot;w|p|b&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="random" expression="&quot;random&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="now" value="{% now &quot;$format$&quot; %}" description="Displays the current date and/or time, using a format according to the given string." toReformat="false" toShortenFQNames="true">
+    <variable name="format" expression="&quot;jS F Y H:i&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="regroup" value="{% regroup $list$ by $attribute$ as $new_list$ %}" description="Regroups a list of alike objects by a common attribute." toReformat="false" toShortenFQNames="true">
+    <variable name="list" expression="&quot;list&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="attribute" expression=" &quot;attribute&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="new_list" expression="&quot;new_list&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="spaceless" value="{% spaceless %}&#10;    $content$&#10;{% endspaceless %}" description="Removes whitespace between HTML tags. This includes tab characters and newlines." toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="url" value="{% url '$url$' $arg$=$val$ %}" description="Returns an absolute path reference (a URL without the domain name) matching a given view." toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="&quot;namespace:name&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="arg" expression="&quot;arg&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="val" expression=" &quot;val&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="static" value="{% static &quot;$path$&quot; %}" description="Retrieve a URL of static files that are saved in STATIC_ROOT" toReformat="false" toShortenFQNames="true">
+    <variable name="path" expression="&quot;path/to/file&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="verbatim" value="{% verbatim %}&#10;    $content$&#10;{% endverbatim %}" description="Stops the template engine from rendering the contents of this block tag." toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="widthratio" value="{% widthratio $this_value$ $max_value$ $max_width$ %}" description="This tag calculates the ratio of a given value to a max value, and then applies that ratio to a constant." toReformat="false" toShortenFQNames="true">
+    <variable name="this_value" expression="&quot;this_value&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="max_value" expression=" &quot;max_value&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="max_width" expression=" &quot;max_width&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="with" value="{% with $variable$=$value$ %}&#10;    $content$&#10;{% endwith %}" description="Caches a complex variable under a simpler name." toReformat="false" toShortenFQNames="true">
+    <variable name="variable" expression="&quot;variable&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression=" &quot;value&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression=" &quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="trans" value="{% trans &quot;$text$&quot; %}" description="Translates either a constant string (enclosed in single or double quotes) or variable content" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="&quot;text&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="blocktrans" value="{% blocktrans %}&#10;    $content$&#10;{% endblocktrans %}" description="Allows you to mark complex sentences consisting of literals and variable content for translation by making use of placeholders" toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="&quot;content&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="i18n" value="{% load i18n %}" description="Loads translation template tags." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="l10n" value="{% load l10n %}" description="Loads localization template tags." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="tz" value="{% load tz %}" description="This library provides control over time zone conversions in templates" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
