@@ -38,7 +38,7 @@
 - [x] **blocktrans** - `{% blocktrans with as %} {% endblocktrans %}`
 - [x] **i18n** - `{% load i18n %}`
 - [x] **l10n** - `{% load l10n %}`
-- [x] **tz** - `{% load tz %}
+- [x] **tz** - `{% load tz %}`
 
 ## Python Code
 
@@ -75,17 +75,18 @@
 - [ ] **m2m** - `models.ManyToManyField`
 - [ ] **o2o** - `models.OneToOneField`
 
-### PostgreSQL-Specific Model Fields `
-- [ ] **marray** - `models.ArrayField`
-- [ ] **mhstore** - `models.HStoreField`
-- [ ] **mjson** - `models.JSONField`
-- [ ] **mintrange** - `models.IntegerRangeField`
-- [ ] **mbigintrange** - `models.BigIntegerRangeField`
-- [ ] **mfloatrange** - `models.FloatRangeField`
-- [ ] **mdatetimerange** - `models.DateTimeRangeField`
-- [ ] **mdaterange** - `models.DateRangeField`
+### PostgreSQL-Specific Model Fields
 
-### Miscellaneous
+- [ ] **marray** - `ArrayField`
+- [ ] **mhstore** - `HStoreField`
+- [ ] **mjson** - `JSONField`
+- [ ] **mintrange** - `IntegerRangeField`
+- [ ] **mbigintrange** - `BigIntegerRangeField`
+- [ ] **mfloatrange** - `FloatRangeField`
+- [ ] **mdatetimerange** - `DateTimeRangeField`
+- [ ] **mdaterange** - `DateRangeField`
+
+### Tests
 
 - [ ] **testcase** - generic test function with `Given`, `When`, `Then` comment sections
 - [ ] **testmodel** - functions for testing `create`, `update` and `delete`
