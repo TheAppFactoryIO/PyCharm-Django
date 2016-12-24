@@ -91,7 +91,7 @@
 
 ### Tests
 
-- [ ] **testcase** - generic test function with `Given`, `When`, `Then` comment sections
-- [ ] **testmodel** - functions for testing `create`, `update` and `delete`
-- [ ] **testview** - functions for testing `view_success`, `view_failure`, `create_success`, `create_failure`, `update_success`, `update_failure`, `delete_success`, `delete_failure``
+- [x] **testcase** - generic test function with `Given`, `When`, `Then` comment sections
+- [x] **testmodel** - functions for testing `create`, `update` and `delete`
+- [x] **testview** - functions for testing `view_success`, `view_failure`, `create_success`, `create_failure`, `update_success`, `update_failure`, `delete_success`, `delete_failure``
 - [ ] **testform** - 

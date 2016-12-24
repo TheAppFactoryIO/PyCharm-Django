@@ -1,4 +1,4 @@
-<templateSet group="Django Template">
+<templateSet group="Django">
   <template name="autoescape" value="{% autoescape $var$ %}&#10;&#9;&#10;{% endautoescape %}" description="Controls the current auto-escaping behavior." toReformat="false" toShortenFQNames="true">
     <variable name="var" expression="&quot;off&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -232,6 +232,21 @@
     <variable name="variable" expression="&quot;variable&quot;" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="testcase" value="def test_case(self, client):&#10;    # Given: &#10;    # When:&#10;    # Then:&#10;    pass" description="Generic test function with Given, When, Then comment sections" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="testmodel" value="class TestModel:&#10;&#10;    def test_create(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_update(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_delete(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;" description="Functions for testing create, update and delete" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="testview" value="class TestView:&#10;&#10;    def test_view_success(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_view_failure(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_create_success(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_create_failure(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_update_success(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_update_failure(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_delete_success(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;&#10;    def test_delete_failure(self):&#10;        # Given: &#10;        # When:&#10;        # Then:&#10;        pass&#10;" description="Functions for testing success and failure scenarios for view, create, update, delete" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>
