@@ -2,6 +2,14 @@
 
 **PyCharm live templates** support for `Django 1.10`. This effort is heavily inspired by [Djaneiro](https://github.com/squ1b3r/Djaneiro) which I use when I was still a Sublime Text user.
 
+## Installation
+
+Copy XML file to templates folder in the following locations:
+
+* Windows: `<your home directory>\.<product name><version number>\config\templates`
+* Linux: `~/.<product name><version number>/config/templates`
+* OSX: `~/Library/Preferences/<product name><version number>/templates`
+
 ## Template Tags
 
 ![](template-demo.gif)
