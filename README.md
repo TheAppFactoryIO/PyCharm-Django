@@ -103,3 +103,86 @@ Copy XML file to templates folder in the following locations:
 - [x] **testmodel** - functions for testing `create`, `update` and `delete`
 - [x] **testview** - functions for testing `view_success`, `view_failure`, `create_success`, `create_failure`, `update_success`, `update_failure`, `delete_success`, `delete_failure``
 - [ ] **testform** - 
+
+
+```python
+def test_case(self, client):
+    # Given: 
+    # When:
+    # Then:
+    assert 1 == 2
+```
+
+```python
+class TestModel:
+
+    def test_create(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_update(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_delete(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+```
+
+```python
+class TestView:
+
+    def test_view_success(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_view_failure(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_create_success(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_create_failure(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_update_success(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_update_failure(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_delete_success(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+
+    def test_delete_failure(self):
+        # Given: 
+        # When:
+        # Then:
+        assert 1 == 2
+```
