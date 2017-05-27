@@ -55,47 +55,47 @@ Copy XML file to templates folder in the following locations:
 
 ### Model Fields
 
-- [ ] **mauto** - `models.AutoField`
-- [ ] **mbigauto** - `models.BigAutoField`
-- [ ] **mbigint** - `models.BigIntegerField`
-- [ ] **mbin** - `models.BinaryField`
-- [ ] **mbool** - `models.BooleanField`
-- [ ] **mchar** - `models.CharField`
-- [ ] **mcomma** - `models.CommaSeparatedIntegerField`
-- [ ] **mdate** - `models.DateField`
-- [ ] **mdatetime** - `models.DateTimeField`
-- [ ] **mdecimal** - `models.DecimalField`
-- [ ] **mduration** - `models.DurationField`
-- [ ] **memail** - `models.EmailField`
-- [ ] **mfile** - `models.FileField`
-- [ ] **mfilepath** - `models.FilePathField`
-- [ ] **mfloat** - `models.FloatField`
-- [ ] **mimage** - `models.ImageField`
-- [ ] **mint** - `models.IntegerField`
-- [ ] **mip** - `models.GenericIPAddressField`
-- [ ] **mnullbool** - `models.NullBooleanField`
-- [ ] **mposint** - `models.PositiveIntegerField`
-- [ ] **mpossmallint** - `models.PositiveSmallIntegerField`
-- [ ] **mslug** - `models.SlugField`
-- [ ] **msmallint** - `models.SmallIntegerField`
-- [ ] **mtext** - `models.TextField`
-- [ ] **mtime** - `models.TimeField`
-- [ ] **murl** - `models.URLField`
-- [ ] **muuid** - `models.UUIDField`
-- [ ] **fk** - `models.ForeignKey`
-- [ ] **m2m** - `models.ManyToManyField`
-- [ ] **o2o** - `models.OneToOneField`
+- [x] **mauto** - `models.AutoField`
+- [x] **mbigauto** - `models.BigAutoField`
+- [x] **mbigint** - `models.BigIntegerField`
+- [x] **mbin** - `models.BinaryField`
+- [x] **mbool** - `models.BooleanField`
+- [x] **mchar** - `models.CharField`
+- [x] **mcomma** - `models.CommaSeparatedIntegerField`
+- [x] **mdate** - `models.DateField`
+- [x] **mdatetime** - `models.DateTimeField`
+- [x] **mdecimal** - `models.DecimalField`
+- [x] **mduration** - `models.DurationField`
+- [x] **memail** - `models.EmailField`
+- [x] **mfile** - `models.FileField`
+- [x] **mfilepath** - `models.FilePathField`
+- [x] **mfloat** - `models.FloatField`
+- [x] **mimage** - `models.ImageField`
+- [x] **mint** - `models.IntegerField`
+- [x] **mip** - `models.GenericIPAddressField`
+- [x] **mnullbool** - `models.NullBooleanField`
+- [x] **mposint** - `models.PositiveIntegerField`
+- [x] **mpossmallint** - `models.PositiveSmallIntegerField`
+- [x] **mslug** - `models.SlugField`
+- [x] **msmallint** - `models.SmallIntegerField`
+- [x] **mtext** - `models.TextField`
+- [x] **mtime** - `models.TimeField`
+- [x] **murl** - `models.URLField`
+- [x] **muuid** - `models.UUIDField`
+- [x] **fk** - `models.ForeignKey`
+- [x] **m2m** - `models.ManyToManyField`
+- [x] **o2o** - `models.OneToOneField`
 
 ### PostgreSQL-Specific Model Fields
 
-- [ ] **marray** - `ArrayField`
-- [ ] **mhstore** - `HStoreField`
-- [ ] **mjson** - `JSONField`
-- [ ] **mintrange** - `IntegerRangeField`
-- [ ] **mbigintrange** - `BigIntegerRangeField`
-- [ ] **mfloatrange** - `FloatRangeField`
-- [ ] **mdatetimerange** - `DateTimeRangeField`
-- [ ] **mdaterange** - `DateRangeField`
+- [x] **marray** - `ArrayField`
+- [x] **mhstore** - `HStoreField`
+- [x] **mjson** - `JSONField`
+- [x] **mintrange** - `IntegerRangeField`
+- [x] **mbigintrange** - `BigIntegerRangeField`
+- [x] **mfloatrange** - `FloatRangeField`
+- [x] **mdatetimerange** - `DateTimeRangeField`
+- [x] **mdaterange** - `DateRangeField`
 
 ### Tests
 
